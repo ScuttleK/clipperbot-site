@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClipperBOT Privacy Policy</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="logo.png" alt="">
+  <a href="./">ClipperBOT</a>
+  <nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: November 18, 2026</p>
+
+<div class="card">
+  <b>In short:</b> ClipperBOT is a desktop app that runs on your own computer. We do not run servers that collect your data,
+  we have no user accounts, and we do not sell or share your information. Your settings, clips and connected-account
+  tokens stay on your computer. ClipperBOT only sends data to the services you choose to use, and only so it can do
+  what you asked.
+</div>
+
+<h2>Who we are</h2>
+<p>ClipperBOT ("the app", "we") is a desktop application for Windows and macOS that finds highlight moments in Twitch
+streams, turns them into short vertical videos, and, when you choose, uploads them to your own social media accounts.
+Questions about this policy can be asked at <a href="https://github.com/ScuttleK/clipperbot-site/issues">github.com/ScuttleK/clipperbot-site/issues</a>.</p>
+
+<h2>What stays on your computer</h2>
+<p>Everything ClipperBOT stores is kept in its data folder on your computer:</p>
+<ul>
+  <li>Your settings, including API keys and access tokens for accounts you connect.</li>
+  <li>Short recordings of the public Twitch streams you choose to monitor, the clips made from them, their transcripts,
+    and the public chat messages sent during those moments.</li>
+  <li>Your review decisions (approve / reject), which the app uses on your computer to learn what you like.</li>
+  <li>Log files that help you troubleshoot the app.</li>
+</ul>
+<p>We (the developers) never receive any of this. You can delete all of it at any time by deleting the data folder.</p>
+
+<h2>Information from TikTok and other platforms you connect</h2>
+<p>When you connect a TikTok account (or YouTube, Instagram or Facebook), you sign in on that platform's own page and
+approve access. ClipperBOT then receives and stores on your computer:</p>
+<ul>
+  <li>An access token and refresh token, used only to upload the videos you approve to that account.</li>
+  <li>Your account's display name (TikTok scope <code>user.info.basic</code>), shown in the app so you can see which account is connected.</li>
+</ul>
+<p>ClipperBOT uses the TikTok scopes <code>video.upload</code> and <code>video.publish</code> only to upload or publish videos
+that you approved, with the title, caption and privacy setting shown to you in the app. It does not read your
+followers, messages, other videos or any other account data, and it does not post anything you didn't approve
+(automatic posting is off unless you turn it on and is limited by the daily limits you set).</p>
+<p>These tokens are never sent anywhere except back to the platform that issued them. You can disconnect an account
+in ClipperBOT's Publishing page at any time, and you can also revoke ClipperBOT's access from that platform's own
+settings (on TikTok, in the security and permissions section of Settings and privacy, where apps with access to
+your account are listed).</p>
+
+<h2>Services ClipperBOT talks to</h2>
+<p>Depending on the features you use, the app sends data directly from your computer to:</p>
+<ul>
+  <li><b>Twitch</b>: to find live streams, watch the streams you monitor and read their public chat. Uses the Twitch API credentials you enter.</li>
+  <li><b>TikTok, YouTube, Instagram, Facebook</b>: only if you connect them, to upload the clips you approve.</li>
+  <li><b>Anthropic (Claude)</b>: only if you turn on the optional Claude clip judge and enter your own Anthropic API key.
+    For each detected moment it sends still frames, the transcript and the chat messages (with chat usernames replaced
+    by placeholders) so Claude can score the moment and write a title. This is processed under Anthropic's own terms
+    and privacy policy on your API account.</li>
+  <li><b>GitHub</b>: to check for and download app updates.</li>
+  <li><b>Hugging Face</b>: to download the speech-recognition model the first time it is needed.</li>
+</ul>
+<p>Each of these services handles data under its own privacy policy.</p>
+
+<h2>Children</h2>
+<p>ClipperBOT is not directed at children under 13 (or the minimum age required in your country) and we do not
+knowingly collect information from them.</p>
+
+<h2>Security</h2>
+<p>All connections to the services above use HTTPS. The app's local control panel only accepts connections from your
+own computer by default. Because your data is stored on your computer, keeping that computer secure keeps your data secure.</p>
+
+<h2>Your choices and deleting your data</h2>
+<ul>
+  <li>Disconnect any account in the app, or revoke access in that platform's settings.</li>
+  <li>Delete individual clips in the app, or delete ClipperBOT's data folder to remove everything.</li>
+  <li>Turn off the Claude clip judge to keep all clip analysis on your computer.</li>
+</ul>
+<p>Since we don't hold any of your data, there is nothing for us to delete on our side; if you have a question, ask at
+the link above.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
+
+<footer>ClipperBOT &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a></footer>
+</main>
+</body>
+</html>
